@@ -10,7 +10,7 @@ jobs:
       - name: pull-request-action
         uses: vsoch/pull-request-action@master
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.FORWARD_TOKEN }}
           PULL_REQUEST_FROM_BRANCH: "fbiville:4.3"
           PULL_REQUEST_BRANCH: "4.3"
           PULL_REQUEST_REPOSITORY: fbiville-testing/commit-fwd-source-repo
